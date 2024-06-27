@@ -1,0 +1,66 @@
+# Import modules
+import random
+import hangman_art
+import hangman_ger
+import os 
+
+def clear():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+# Print a welcome and logo 
+print(f"Willkommen zum Galgenmännchenspiel! \n {hangman_art.logo}")
+
+# Choose a random word from the word_list
+chosen_word = random.choice(hangman_ger.word_list)
+word_length = len(chosen_word)
+
+# Define variables and Lists 
+end_of_game = False
+lives = 6
+display = []
+words_guessed = []
+
+# Create blanks 
+for _ in range(word_length):
+    display += "_"
+
+# Create the game using a while loop 
+
+while not end_of_game:
+    guess = input("Rate einen Buchstaben: ").lower()
+    clear()
+# Check if the word was guessed already
+    if guess in words_guessed:
+        print(f"Du hast {guess} schon geraten. Versuche es nochmal.")   
+# Replace the blank with the correct letter if guessed     
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+            print(f"Du hast {guess} geraten. Das war richtig!")
+
+    # Check if user is wrong.
+    if guess not in words_guessed and guess not in chosen_word:
+            print(f"Du hast {guess} geraten. Das war inkorrekt. Du verlierst ein Leben.\n")
+            lives -= 1
+            if lives == 0:
+                end_of_game = True
+                print("Du bist gestorben. Du hast verloren.")
+    
+    # Adding words to a list of words that have been guessed 
+    words_guessed += guess
+    
+    # Join all the elements in the list and turn it into a String.
+    print(f"{' '.join(display)}")
+
+        #Check if user has got all letters.
+    if "_" not in display:
+            end_of_game = True
+            print("Herzlichen Glückwunsch du hast gewonnen!")
+
+        #TODO-2: - Import the stages from hangman_art.py and make this error go away.
+    print(hangman_art.stages[lives])
+
