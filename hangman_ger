@@ -1,0 +1,16 @@
+word_list = [
+    "Apfel", "Banane", "Kirsche", "Drachenfrucht", "Erdbeere", "Feige", "Granatapfel", "Himbeere", "Ingwer", "Joghurt",
+    "Kohl", "Lauch", "Mandarine", "Nektarine", "Orange", "Paprika", "Quitte", "Radieschen", "Spinat", "Tomate",
+    "Uhr", "Vase", "Walnuss", "Xylophon", "Yogamatte", "Zucchini", "Avocado", "Blumenkohl", "Chili", "Dattel",
+    "Eichel", "Fenchel", "Gurke", "Honig", "Imker", "Jasmin", "Karotte", "Linse", "Möhre", "Nuss",
+    "Obst", "Pfirsich", "Quark", "Rübe", "Sellerie", "Tafel", "Uhu", "Vogel", "Wald", "Xylophon",
+    "Yacht", "Zwiebel", "Ananas", "Brokkoli", "Champignon", "Distel", "Eis", "Fisch", "Gans", "Haus",
+    "Igel", "Jacke", "Käse", "Lachs", "Mango", "Nudel", "Ofen", "Papaya", "Qualle", "Reis",
+    "Salat", "Tee", "Uhr", "Vanille", "Wasser", "Xenon", "Yoga", "Zitrone", "Auto", "Boot",
+    "Clown", "Delfin", "Ente", "Fuchs", "Gabel", "Hund", "Insel", "Jäger", "Kuh", "Löwe",
+    "Maus", "Nashorn", "Oase", "Panda", "Quarz", "Rose", "Sonne", "Tiger", "Ufo", "Vulkan",
+    "Wal", "Xylophon", "Yeti", "Zaun", "Arzt", "Bäcker", "Chemiker", "Detektiv", "Elefant", "Feuerwehrmann",
+    "Gärtner", "Heiler", "Ingenieur", "Jongleur", "Kapitän", "Lehrer", "Musiker", "Notar", "Optiker", "Pilot",
+    "Querdenker", "Ranger", "Schneider", "Tänzer", "Uhrmacher", "Verkäufer", "Wissenschaftler", "Zimmermann", "Astronaut", "Bauer",
+    "Comedian", "Designer", "Erzähler", "Fotograf", "Gärtnerin", "Hutmacher", "Imkerin", "Journalist", "Künstler", "Lektor"
+]
